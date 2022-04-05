@@ -1,0 +1,752 @@
+@import"mixin";
+
+
+.l-contents{
+    display: flex;
+    justify-content: space-between;
+    &__left{
+        width: 80%;
+        @include tab{
+            width: 100%;
+        }
+        &__page{
+            &__top{
+                display: flex;
+                &__img{
+                    background-image:url("../pictures/page_top.png");
+                    background-size: cover;
+                    background-position: center;
+                    height: 400px;
+                    width: 100%;
+                    z-index: 1;
+                    &__big{
+                        height: 400px;
+                        width: 100%;
+                    }
+                }
+                &__word{
+                    position: absolute;
+                    color: white;
+                    z-index: 2;
+                    line-height: 400px;
+                    font-size: 2.5rem;
+                    margin: 0 0 0 40px;
+                }
+            }    
+
+        }
+        &__single{
+            @include sp{
+                flex-flow: column;
+                
+            }
+            &__top{
+                h1{
+                    margin: 0 0 0 30px;
+                }
+            }
+            &__bold{
+                font-weight: bold;
+                font-size: 0.8rem;
+                margin: 40px 0 40px 40px;
+            }
+            &__switch{
+                background-color: #E6E0DC;
+                color: black;
+                font-size: 1.0rem;
+                font-weight: 500;
+                padding: 4px;
+                margin: 30px;
+                border-radius: 20px;
+                line-height: 80px;
+                width: 50%;
+                text-align: center;
+                border: solid 1px #333;
+                cursor: pointer;
+                a{
+                    display: block;
+                    line-height: 80px;
+                    width: 100%;
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+            &__table{
+                width: 90%;
+                border-collapse: collapse;
+                margin: 0 0px 20px 30px;
+                th{
+                    width: 40%;
+                    border: solid 1px #333;
+                    padding: 20px;
+                }
+                td{
+                    width: 60%;
+                    border: solid 1px #333;
+                    padding: 20px;
+                }
+            }
+            &__list{
+                margin: 30px;
+                &__1{
+                    font-size: 0.8rem;
+                }
+                &__2{
+                    font-size: 0.8rem;
+                    margin: 20px 0 20px 15px;
+                }
+            }
+            &__h2{
+                margin: 30px;
+                font-size: 2rem;
+            }
+            &__h3{
+                margin: 30px;
+                font-size: 1.5rem;
+            }
+            &__h4{
+                margin: 30px;
+                font-size: 1.2rem;
+            }
+            &__h5{
+                margin: 30px;
+                font-size: 1rem;
+            }
+            &__p{
+                margin: 30px;
+                font-size: 0.8rem;
+            }
+            &__gray{
+                margin: 30px;
+                background-color: #F5F5F5;
+                font-size: 0.8rem;
+                p{
+                    padding: 30px;
+                }
+            }
+            &__burger{
+                    &__img{
+                        background-image:url("../pictures/hamburger_set.png");
+                        background-size: cover;
+                        background-position: center;
+                        height: 400px;
+                        width: 550px;
+                        margin:0px auto;
+                        @include sp{
+                            height: 200px;
+                            width:400px;
+
+                        }
+                        
+                    }
+                    &__set{
+                        display: flex;
+                        margin: 50px auto;
+                        justify-content: center;
+                        &__img{
+                            background-image:url("../pictures/hamburger_set.png");
+                            background-size: cover;
+                            background-position: center;
+                            height: 500px;
+                            width: 700px;
+                            margin: 60px 45px;
+                            @include tab{
+                                height: 250px;
+                                width:450px;
+                            }
+                            @include sp{
+                                height: 100px;
+                                width: 300px;
+                            }
+                            &__big{
+                            background-image:url("../pictures/hamburger_set.png");
+                            background-size: cover;
+                            background-position: center;
+                            height: 400px;
+                            width: 700px;
+                            margin: 40px auto;
+                            }
+                        }
+                        &__sentence{
+                            height: 200px;
+                            width: 450px;
+                            font-size: 0.8rem;
+                            margin: 40px 10px;
+                            @include sp{
+                                height: 100px;
+                                width: 400px;
+                            }
+                        }
+                        &__images{
+                            background-image:url("../pictures/hamburger_set.png");
+                            background-repeat:space;
+                            background-size: 33%;
+                            width: 95%;
+                            height: 700px;
+                            margin: 0px 0px 0px 20px;
+                        }
+                    }
+                }
+            &__top{
+                display: flex;
+                &__img{
+                    background-image:url("../pictures/topチーズバーガー.png");
+                    background-size: cover;
+                    background-position: center;
+                    height: 400px;
+                    width: 100%;
+                    z-index: 1;
+                }
+                &__word{
+                    position: absolute;
+                    color: white;
+                    z-index: 2;
+                    line-height: 400px;
+                    font-size: 2.5rem;
+                }
+                
+
+            }
+        }
+        &__archive{
+            &__top{
+                display: flex;
+                position: relative;
+                height: 200px;
+                &__bg{
+                    position: absolute;
+                    background-color: black;
+                    height: 200px;
+                    width: 100%;
+                    z-index: 1;
+                }
+                &__img{
+                    position: absolute;
+                    background-image:url("../pictures/マスクグループ.png");
+                    background-size: cover;
+                    background-position: center;
+                    height: 200px;
+                    width: 100%;
+                    z-index: 2;
+                }
+                &__word{
+                    color: white;
+                    z-index: 3;
+                    display: flex;
+                    line-height: 200px;
+                    margin-left: 20px;
+                    h1{
+                        font-size: 2.5rem
+                    }
+                    p{
+                        margin: 5px 30px 0 5px;
+                        font-size: 1.5rem;
+                    }
+                }
+                &__title{
+                    margin: 50px 30px 25px 30px;
+                    h2{
+                        margin: 25px 0;
+                        font-size: 1.5rem;
+                    }      
+                }
+            } 
+            &__bottom{
+                    &__menu{
+                        display: flex;
+                        position: relative;
+                        margin: 400px 30px 25px 30px;
+                        top: -350px;
+                        @include tab{
+                            margin:720px 30px 25px 30px;
+                            top:-670px
+
+                        }
+                       
+                        
+
+                        &__img{
+                            background-image:url("../pictures/チーズバーガー.png");
+                            background-size: cover;
+                            background-position: center;
+                            height: 350px;
+                            width: 100%;
+                            position: absolute;
+                            z-index: 1;
+                        }
+                        &__box{
+                            left: 50%;
+                            height: 350px;
+                            width: 50%;
+                            margin-top: 100px 0 0 0;
+                            position: absolute;
+                            z-index: 2;
+                            background-color: #3C2B1C;
+                            color: white;
+                            h2{
+                                font-size: 1.5rem;
+                                margin: 30px 0px 30px 40px;
+                            }
+                            h3{
+                                font-size: 1.2rem;
+                                margin: 0 0 20px 40px;
+                            }
+                            p{
+                                margin: 0px 20px 0 40px;
+
+                            }
+                            @include tab{
+                                width: 100%;
+                                top: 350px;
+                                left: 0px;
+
+                            }
+                        &__switch{
+                            background-color: white;
+                            color: black;
+                            font-size: 1.2rem;
+                            font-weight: 700;
+                            padding: 4px;
+                            margin: 30px auto;
+                            border-radius: 30px;
+                            line-height: 50px;
+                            width: 50%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__right{
+        width: 20%;
+        background-color: #F2EDE9;
+        @include tab{
+            width: 0%;
+        }
+    }
+}
+
+
+
+.l-header{
+    width: 100%;
+    height: 200px;
+    background-color: #FFF7EF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__left{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        h1{
+            margin: 0 0 0 50px;
+        }
+        a{
+            color: #707070;
+            font-size: 3.0rem;
+        }
+        @include tab{
+            width: 100%;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+        }
+        &__menu{
+            &__botton{
+                font-size: 1.5rem;
+                margin: 10px -75px 160px ; 
+                cursor: pointer;
+                display: none;
+                z-index: 999;
+                color: #707070;
+                font-weight: bold;
+                @include tab{
+                    display: flex;
+                }
+                @include sp{
+                   left:25px;
+                }    
+            }
+        }
+    }
+    &__form{
+        margin: 20px 0 0 50px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        right: 10px;
+        &__box{
+           padding: 0 0 0 25px;
+           width: 300px;
+           height: 2rem;
+           border-radius: 0.6rem; 
+           border: solid 1px #707070;
+           font-size: 1.6rem;
+           font-weight: 500;
+        }
+        &__botton{
+            margin: 0 0 0 10px;
+            width: 5rem;
+            height: 2rem;
+            background-color: #F2EDE9;
+            border-radius: 0.6rem;
+            border: solid 1px #707070;
+            color: #707070;
+            cursor: pointer;
+        }
+    }
+    &__right{
+        width: 20%;
+        height: 200px;
+        background-color: #F2EDE9;
+        @include tab{
+            position: fixed;
+            left: 100%;
+        }
+        &__is-open{
+            z-index: 10; 
+            left: 70%; 
+            width: 30%; 
+        }
+
+    }
+}
+
+.fa-search{
+    top: 8px;
+    margin-right: 360px;
+    position: absolute;
+    z-index: 999;
+    @include tab{
+        margin-right: 350px;
+    }
+}
+
+.line{
+    &__side{
+      border-top:4px solid white;
+      width: 90px;
+      margin-left: 20px;
+    }&__border{
+      border-top:2px solid white;
+      width: 20px;
+      transform:rotate(90deg); 
+    }
+}
+
+.l-main{
+    &__top{
+        height: 530px;
+        background-image: url("../pictures/ダミーサイト.png");
+        background-size: cover;
+        background-position: center;
+        >a{
+            color: white;
+        }
+        p{
+            font-weight: bold;
+            line-height: 530px;
+            padding: 0px 30px;
+            font-size: 3rem;
+        }
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 30px;
+        @include sp{
+            display: block;
+        }
+        &__right{
+            height: 1000px;
+            width: 600px;
+            background-image: url("../pictures/Eat in.png");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            margin-right: 20px;
+            >a{
+                color: white;
+                font-size: 2rem;
+            }
+            p{
+                font-weight: bold;
+                line-height: 30px;
+                padding: 25px 15px 15px 15px;
+            }
+            @include sp{
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+        &__left{
+            height: 1000px;
+            width: 600px;
+            background-image: url("../pictures/Take out.png");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            >a{
+                color: white;
+                font-size: 2rem;
+            }
+            p{
+                font-weight: bold;
+                line-height: 30px;
+                padding: 25px 5px 15px 15px;
+            }
+           
+            @include sp{
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+        &__box{
+            position: absolute;
+            bottom: 30px;
+            margin: 10px;
+            width: 95%;
+            color: #3C2A10;
+            &__1,&__2{
+                padding: 10px 0 80px 0px;
+                margin: 30px 0px 0px 0px;
+                background-color:rgba($color:white, $alpha: 0.5);
+                font-size: 1.3rem;
+            }
+            h2{
+                margin-top: 15px;
+                padding-left: 10px;
+                font-size: 2.5rem;
+           }
+       }
+    }
+
+    &__under{
+        &__map{
+                width: 100%;
+                display: flex;
+                position: relative;
+                margin:0 0 30px 30px;
+            &__box{
+                position: absolute;
+                z-index: 2;
+                width: 65%;
+                height: 100%;
+                background-color:rgba($color:black, $alpha: 0.5);
+                @include tab{
+                    width:80%;
+                }
+                .title{
+                    font-size: 2rem;
+                    padding: 10px;
+                    margin: 20px;
+                }
+                p{
+                    margin-top: 50px;
+                    line-height: 40px;
+                    line-height: 1.6rem;
+                }
+                &:hover{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+.l-sidebar{
+    @include tab{
+        position:fixed;
+        overflow: scroll;
+        z-index: 999;
+        top:0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(90deg,#7F7F7F 0%,#7F7F7F 50px,#F2EDE9 50px,#F2EDE9 100%);
+        transition: all 0.6s;
+        padding: 0 0 0 0px;
+        &.__is-open{
+            right: 0%;
+        }
+    }    
+    height: inherit;
+    &__batsu{
+        display: none;
+        &.__is-open{
+            display: block;
+            margin: 10px 0 0 auto;
+            text-align: right;
+            cursor: pointer;
+            display: block;
+            width: 50px;/*枠の大きさ*/
+            height: 50px;/*枠の大きさ*/
+            background: #F2EDE9;
+            position: relative;
+            &::before{
+                content: "";
+                display: block;
+                width: 100%;/*バツ線の長さ*/
+                height: 5px;/*バツ線の太さ*/
+                background: #707070;
+                transform: rotate(45deg);
+                transform-origin:0% 50%;
+                position: absolute;
+                top: 0px;
+                left: 14%;
+            }
+            &::after{
+                content: "";
+                display: block;
+                width: 100%;/*バツ線の長さ*/
+                height: 5px;/*バツ線の太さ*/
+                background: #707070;
+                transform: rotate(-45deg);
+                transform-origin:0% 50%;
+                position: absolute;
+                top: 36px;
+                left: 14%;
+            }
+       }
+   }
+    >a{
+        display: block;
+        font-size: 34px;
+        font-weight: 600;
+        color: #707070;
+        margin: 100px 25px;
+        @include tab{
+            margin: 100px 50px;
+        }
+
+    }
+    ul{
+        li{
+            padding-bottom: 15px;
+            font-size: 24px;
+            margin-left: 25px;
+            @include tab{
+                margin-left:50px;
+            }
+            >a{
+                color: #707070;
+            }
+            ul{
+                padding-top: 45px;
+                padding-left: 10px;
+                li{
+                    font-size: 20px;
+                    padding-bottom: 30px;
+                    a{
+                        color: #707070;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.title{
+    font-size: 3rem;
+    color:white;
+}
+
+.l-footer{
+    background-color:#957F6A;
+    height: 150px;
+    &__center{
+        padding-top: 20px;
+        display: flex;
+        color: white;
+        justify-content: center;
+        font-size: 1.2rem;
+        a{
+            color: white;
+        }
+        li{
+            padding-top: 5px;
+        }
+    }
+    &__copyright{
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+        
+    }
+}
+
+
+.l-archive{
+    &__top{
+        display: flex;
+        position: relative;
+        &__img{
+            height: 500px;
+            width: auto;   
+            background-image:url("../hamburger/pictures/マスクグループ.png");
+            background-size: cover;
+            background-position: center;
+        } 
+    }
+}
+
+.p-pagenation{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul{
+        display: flex;
+        li{
+            padding: 0 8px;
+            font-size: 1.2rem;
+            @include tab{
+                font-size: 0.8rem;
+                padding: 0 4px;
+       
+            }
+            &:first-of-type{
+                padding-top: 10px;
+                &::after{
+                    content: "<<";
+                    color: #3C2B1C;
+                    padding-left: 10px;
+                }
+                @include tab{
+                    padding-left: 4px;
+           
+                }
+            }
+            &:last-of-type{
+                position: relative;
+                &::after{
+                    position: absolute;
+                    top: 10px;
+                    right: -24px;
+                    content: ">>";
+                    color: #3C2B1C;
+                    @include tab{
+                        right: -14px;
+               
+                    }
+                }
+
+            }
+            a{
+                display: block;
+                color: #3C2B1C;
+                border: solid 1px #3C2B1C;
+                padding: 10px;
+            }
+            @include tab{
+                font-size: 0.8rem;
+        
+            }
+        }
+    }
+}

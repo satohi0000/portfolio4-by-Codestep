@@ -1,0 +1,946 @@
+@charset "UTF-8";
+.l-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.l-contents__left {
+  width: 80%;
+}
+
+@media (max-width: 1200px) {
+  .l-contents__left {
+    width: 100%;
+  }
+}
+
+.l-contents__left__page__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.l-contents__left__page__top__img {
+  background-image: url("../pictures/page_top.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  z-index: 1;
+}
+
+.l-contents__left__page__top__img__big {
+  height: 400px;
+  width: 100%;
+}
+
+.l-contents__left__page__top__word {
+  position: absolute;
+  color: white;
+  z-index: 2;
+  line-height: 400px;
+  font-size: 2.5rem;
+  margin: 0 0 0 40px;
+}
+
+@media (max-width: 599px) {
+  .l-contents__left__single {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
+.l-contents__left__single__top h1 {
+  margin: 0 0 0 30px;
+}
+
+.l-contents__left__single__bold {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin: 40px 0 40px 40px;
+}
+
+.l-contents__left__single__switch {
+  background-color: #E6E0DC;
+  color: black;
+  font-size: 1.0rem;
+  font-weight: 500;
+  padding: 4px;
+  margin: 30px;
+  border-radius: 20px;
+  line-height: 80px;
+  width: 50%;
+  text-align: center;
+  border: solid 1px #333;
+  cursor: pointer;
+}
+
+.l-contents__left__single__switch a {
+  display: block;
+  line-height: 80px;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+}
+
+.l-contents__left__single__table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 0 0px 20px 30px;
+}
+
+.l-contents__left__single__table th {
+  width: 40%;
+  border: solid 1px #333;
+  padding: 20px;
+}
+
+.l-contents__left__single__table td {
+  width: 60%;
+  border: solid 1px #333;
+  padding: 20px;
+}
+
+.l-contents__left__single__list {
+  margin: 30px;
+}
+
+.l-contents__left__single__list__1 {
+  font-size: 0.8rem;
+}
+
+.l-contents__left__single__list__2 {
+  font-size: 0.8rem;
+  margin: 20px 0 20px 15px;
+}
+
+.l-contents__left__single__h2 {
+  margin: 30px;
+  font-size: 2rem;
+}
+
+.l-contents__left__single__h3 {
+  margin: 30px;
+  font-size: 1.5rem;
+}
+
+.l-contents__left__single__h4 {
+  margin: 30px;
+  font-size: 1.2rem;
+}
+
+.l-contents__left__single__h5 {
+  margin: 30px;
+  font-size: 1rem;
+}
+
+.l-contents__left__single__p {
+  margin: 30px;
+  font-size: 0.8rem;
+}
+
+.l-contents__left__single__gray {
+  margin: 30px;
+  background-color: #F5F5F5;
+  font-size: 0.8rem;
+}
+
+.l-contents__left__single__gray p {
+  padding: 30px;
+}
+
+.l-contents__left__single__burger__img {
+  background-image: url("../pictures/hamburger_set.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 550px;
+  margin: 0px auto;
+}
+
+@media (max-width: 599px) {
+  .l-contents__left__single__burger__img {
+    height: 200px;
+    width: 400px;
+  }
+}
+
+.l-contents__left__single__burger__set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.l-contents__left__single__burger__set__img {
+  background-image: url("../pictures/hamburger_set.png");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 700px;
+  margin: 60px 45px;
+}
+
+@media (max-width: 1200px) {
+  .l-contents__left__single__burger__set__img {
+    height: 250px;
+    width: 450px;
+  }
+}
+
+@media (max-width: 599px) {
+  .l-contents__left__single__burger__set__img {
+    height: 100px;
+    width: 300px;
+  }
+}
+
+.l-contents__left__single__burger__set__img__big {
+  background-image: url("../pictures/hamburger_set.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 700px;
+  margin: 40px auto;
+}
+
+.l-contents__left__single__burger__set__sentence {
+  height: 200px;
+  width: 450px;
+  font-size: 0.8rem;
+  margin: 40px 10px;
+}
+
+@media (max-width: 599px) {
+  .l-contents__left__single__burger__set__sentence {
+    height: 100px;
+    width: 400px;
+  }
+}
+
+.l-contents__left__single__burger__set__images {
+  background-image: url("../pictures/hamburger_set.png");
+  background-repeat: space;
+  background-size: 33%;
+  width: 95%;
+  height: 700px;
+  margin: 0px 0px 0px 20px;
+}
+
+.l-contents__left__single__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.l-contents__left__single__top__img {
+  background-image: url("../pictures/topチーズバーガー.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  z-index: 1;
+}
+
+.l-contents__left__single__top__word {
+  position: absolute;
+  color: white;
+  z-index: 2;
+  line-height: 400px;
+  font-size: 2.5rem;
+}
+
+.l-contents__left__archive__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 200px;
+}
+
+.l-contents__left__archive__top__bg {
+  position: absolute;
+  background-color: black;
+  height: 200px;
+  width: 100%;
+  z-index: 1;
+}
+
+.l-contents__left__archive__top__img {
+  position: absolute;
+  background-image: url("../pictures/マスクグループ.png");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+  z-index: 2;
+}
+
+.l-contents__left__archive__top__word {
+  color: white;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 200px;
+  margin-left: 20px;
+}
+
+.l-contents__left__archive__top__word h1 {
+  font-size: 2.5rem;
+}
+
+.l-contents__left__archive__top__word p {
+  margin: 5px 30px 0 5px;
+  font-size: 1.5rem;
+}
+
+.l-contents__left__archive__top__title {
+  margin: 50px 30px 25px 30px;
+}
+
+.l-contents__left__archive__top__title h2 {
+  margin: 25px 0;
+  font-size: 1.5rem;
+}
+
+.l-contents__left__archive__bottom__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 400px 30px 25px 30px;
+  top: -350px;
+}
+
+@media (max-width: 1200px) {
+  .l-contents__left__archive__bottom__menu {
+    margin: 720px 30px 25px 30px;
+    top: -670px;
+  }
+}
+
+.l-contents__left__archive__bottom__menu__img {
+  background-image: url("../pictures/チーズバーガー.png");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.l-contents__left__archive__bottom__menu__box {
+  left: 50%;
+  height: 350px;
+  width: 50%;
+  margin-top: 100px 0 0 0;
+  position: absolute;
+  z-index: 2;
+  background-color: #3C2B1C;
+  color: white;
+}
+
+.l-contents__left__archive__bottom__menu__box h2 {
+  font-size: 1.5rem;
+  margin: 30px 0px 30px 40px;
+}
+
+.l-contents__left__archive__bottom__menu__box h3 {
+  font-size: 1.2rem;
+  margin: 0 0 20px 40px;
+}
+
+.l-contents__left__archive__bottom__menu__box p {
+  margin: 0px 20px 0 40px;
+}
+
+@media (max-width: 1200px) {
+  .l-contents__left__archive__bottom__menu__box {
+    width: 100%;
+    top: 350px;
+    left: 0px;
+  }
+}
+
+.l-contents__left__archive__bottom__menu__box__switch {
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 4px;
+  margin: 30px auto;
+  border-radius: 30px;
+  line-height: 50px;
+  width: 50%;
+  text-align: center;
+}
+
+.l-contents__right {
+  width: 20%;
+  background-color: #F2EDE9;
+}
+
+@media (max-width: 1200px) {
+  .l-contents__right {
+    width: 0%;
+  }
+}
+
+.l-header {
+  width: 100%;
+  height: 200px;
+  background-color: #FFF7EF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.l-header__left {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.l-header__left h1 {
+  margin: 0 0 0 50px;
+}
+
+.l-header__left a {
+  color: #707070;
+  font-size: 3.0rem;
+}
+
+@media (max-width: 1200px) {
+  .l-header__left {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.l-header__left__menu__botton {
+  font-size: 1.5rem;
+  margin: 10px -75px 160px;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+  color: #707070;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .l-header__left__menu__botton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 599px) {
+  .l-header__left__menu__botton {
+    left: 25px;
+  }
+}
+
+.l-header__form {
+  margin: 20px 0 0 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 10px;
+}
+
+.l-header__form__box {
+  padding: 0 0 0 25px;
+  width: 300px;
+  height: 2rem;
+  border-radius: 0.6rem;
+  border: solid 1px #707070;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.l-header__form__botton {
+  margin: 0 0 0 10px;
+  width: 5rem;
+  height: 2rem;
+  background-color: #F2EDE9;
+  border-radius: 0.6rem;
+  border: solid 1px #707070;
+  color: #707070;
+  cursor: pointer;
+}
+
+.l-header__right {
+  width: 20%;
+  height: 200px;
+  background-color: #F2EDE9;
+}
+
+@media (max-width: 1200px) {
+  .l-header__right {
+    position: fixed;
+    left: 100%;
+  }
+}
+
+.l-header__right__is-open {
+  z-index: 10;
+  left: 70%;
+  width: 30%;
+}
+
+.fa-search {
+  top: 8px;
+  margin-right: 360px;
+  position: absolute;
+  z-index: 999;
+}
+
+@media (max-width: 1200px) {
+  .fa-search {
+    margin-right: 350px;
+  }
+}
+
+.line__side {
+  border-top: 4px solid white;
+  width: 90px;
+  margin-left: 20px;
+}
+
+.line__border {
+  border-top: 2px solid white;
+  width: 20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.l-main__top {
+  height: 530px;
+  background-image: url("../pictures/ダミーサイト.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.l-main__top > a {
+  color: white;
+}
+
+.l-main__top p {
+  font-weight: bold;
+  line-height: 530px;
+  padding: 0px 30px;
+  font-size: 3rem;
+}
+
+.l-main__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 30px;
+}
+
+@media (max-width: 599px) {
+  .l-main__bottom {
+    display: block;
+  }
+}
+
+.l-main__bottom__right {
+  height: 1000px;
+  width: 600px;
+  background-image: url("../pictures/Eat in.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-right: 20px;
+}
+
+.l-main__bottom__right > a {
+  color: white;
+  font-size: 2rem;
+}
+
+.l-main__bottom__right p {
+  font-weight: bold;
+  line-height: 30px;
+  padding: 25px 15px 15px 15px;
+}
+
+@media (max-width: 599px) {
+  .l-main__bottom__right {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.l-main__bottom__left {
+  height: 1000px;
+  width: 600px;
+  background-image: url("../pictures/Take out.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.l-main__bottom__left > a {
+  color: white;
+  font-size: 2rem;
+}
+
+.l-main__bottom__left p {
+  font-weight: bold;
+  line-height: 30px;
+  padding: 25px 5px 15px 15px;
+}
+
+@media (max-width: 599px) {
+  .l-main__bottom__left {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.l-main__bottom__box {
+  position: absolute;
+  bottom: 30px;
+  margin: 10px;
+  width: 95%;
+  color: #3C2A10;
+}
+
+.l-main__bottom__box__1, .l-main__bottom__box__2 {
+  padding: 10px 0 80px 0px;
+  margin: 30px 0px 0px 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1.3rem;
+}
+
+.l-main__bottom__box h2 {
+  margin-top: 15px;
+  padding-left: 10px;
+  font-size: 2.5rem;
+}
+
+.l-main__under__map {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 0 0 30px 30px;
+}
+
+.l-main__under__map__box {
+  position: absolute;
+  z-index: 2;
+  width: 65%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1200px) {
+  .l-main__under__map__box {
+    width: 80%;
+  }
+}
+
+.l-main__under__map__box .title {
+  font-size: 2rem;
+  padding: 10px;
+  margin: 20px;
+}
+
+.l-main__under__map__box p {
+  margin-top: 50px;
+  line-height: 40px;
+  line-height: 1.6rem;
+}
+
+.l-main__under__map__box:hover {
+  display: none;
+}
+
+.l-sidebar {
+  height: inherit;
+}
+
+@media (max-width: 1200px) {
+  .l-sidebar {
+    position: fixed;
+    overflow: scroll;
+    z-index: 999;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, #7F7F7F 0%, #7F7F7F 50px, #F2EDE9 50px, #F2EDE9 100%);
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    padding: 0 0 0 0px;
+  }
+  .l-sidebar.__is-open {
+    right: 0%;
+  }
+}
+
+.l-sidebar__batsu {
+  display: none;
+}
+
+.l-sidebar__batsu.__is-open {
+  display: block;
+  margin: 10px 0 0 auto;
+  text-align: right;
+  cursor: pointer;
+  display: block;
+  width: 50px;
+  /*枠の大きさ*/
+  height: 50px;
+  /*枠の大きさ*/
+  background: #F2EDE9;
+  position: relative;
+}
+
+.l-sidebar__batsu.__is-open::before {
+  content: "";
+  display: block;
+  width: 100%;
+  /*バツ線の長さ*/
+  height: 5px;
+  /*バツ線の太さ*/
+  background: #707070;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  position: absolute;
+  top: 0px;
+  left: 14%;
+}
+
+.l-sidebar__batsu.__is-open::after {
+  content: "";
+  display: block;
+  width: 100%;
+  /*バツ線の長さ*/
+  height: 5px;
+  /*バツ線の太さ*/
+  background: #707070;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  position: absolute;
+  top: 36px;
+  left: 14%;
+}
+
+.l-sidebar > a {
+  display: block;
+  font-size: 34px;
+  font-weight: 600;
+  color: #707070;
+  margin: 100px 25px;
+}
+
+@media (max-width: 1200px) {
+  .l-sidebar > a {
+    margin: 100px 50px;
+  }
+}
+
+.l-sidebar ul li {
+  padding-bottom: 15px;
+  font-size: 24px;
+  margin-left: 25px;
+}
+
+@media (max-width: 1200px) {
+  .l-sidebar ul li {
+    margin-left: 50px;
+  }
+}
+
+.l-sidebar ul li > a {
+  color: #707070;
+}
+
+.l-sidebar ul li ul {
+  padding-top: 45px;
+  padding-left: 10px;
+}
+
+.l-sidebar ul li ul li {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.l-sidebar ul li ul li a {
+  color: #707070;
+}
+
+.title {
+  font-size: 3rem;
+  color: white;
+}
+
+.l-footer {
+  background-color: #957F6A;
+  height: 150px;
+}
+
+.l-footer__center {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+}
+
+.l-footer__center a {
+  color: white;
+}
+
+.l-footer__center li {
+  padding-top: 5px;
+}
+
+.l-footer__copyright {
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.l-archive__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.l-archive__top__img {
+  height: 500px;
+  width: auto;
+  background-image: url("../hamburger/pictures/マスクグループ.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.p-pagenation {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.p-pagenation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-pagenation ul li {
+  padding: 0 8px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1200px) {
+  .p-pagenation ul li {
+    font-size: 0.8rem;
+    padding: 0 4px;
+  }
+}
+
+.p-pagenation ul li:first-of-type {
+  padding-top: 10px;
+}
+
+.p-pagenation ul li:first-of-type::after {
+  content: "<<";
+  color: #3C2B1C;
+  padding-left: 10px;
+}
+
+@media (max-width: 1200px) {
+  .p-pagenation ul li:first-of-type {
+    padding-left: 4px;
+  }
+}
+
+.p-pagenation ul li:last-of-type {
+  position: relative;
+}
+
+.p-pagenation ul li:last-of-type::after {
+  position: absolute;
+  top: 10px;
+  right: -24px;
+  content: ">>";
+  color: #3C2B1C;
+}
+
+@media (max-width: 1200px) {
+  .p-pagenation ul li:last-of-type::after {
+    right: -14px;
+  }
+}
+
+.p-pagenation ul li a {
+  display: block;
+  color: #3C2B1C;
+  border: solid 1px #3C2B1C;
+  padding: 10px;
+}
+
+@media (max-width: 1200px) {
+  .p-pagenation ul li {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
