@@ -1,0 +1,125 @@
+.l-header {
+  width: 100%;
+  height: 200px;
+  background-color: #fff7ef;
+  display: flex;
+  align-items: center;
+
+  &__left {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      margin: 0 0 0 50px;
+      font-weight: bold;
+    }
+    a {
+      display: block;
+      color: #707070;
+      font-size: 3rem;
+    }
+    @include tab {
+      width: 270px;
+      margin: auto;
+      display: block;
+      text-align: center;
+      flex-direction: column;
+    }
+    &__menu {
+      &__botton {
+        font-size: 1.5rem;
+        margin: 10px 0px 160px;
+        cursor: pointer;
+        display: none;
+        z-index: 999;
+        color: #707070;
+        font-weight: bold;
+        @include tab {
+          margin-right: 20px;
+          font-size: 2rem;
+          display: flex;
+          writing-mode: horizontal-tb;
+        }
+        @include sp {
+          left: 25px;
+        }
+      }
+    }
+  }
+  &__form {
+    margin: 25px 0px 0 75px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &__box {
+      padding: 0 0 0 25px;
+      height: 2rem;
+      border-radius: 0.6rem;
+      border: solid 1px #707070;
+      font-size: 2rem;
+      font-weight: 500;
+      @include sp {
+        font-size: 1.8rem;
+      }
+    }
+    &__botton {
+      padding: 0 25px;
+      margin: 0 20px 0 10px;
+      font-size: 0.8rem;
+      width: 5rem;
+      height: 2rem;
+      background-color: #f2ede9;
+      border-radius: 0.7rem;
+      border: solid 1px #707070;
+      color: #707070;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+  &__right {
+    width: 20%;
+    height: 200px;
+    background-color: #f2ede9;
+    @include tab {
+      position: fixed;
+      left: 100%;
+    }
+    &__is-open {
+      z-index: 10;
+      left: 70%;
+      width: 30%;
+    }
+  }
+}
+
+.fa-search {
+  top: 8px;
+  margin: 0px 440px 0px 0px;
+  position: absolute;
+  z-index: 999;
+  @include tab {
+    margin-right: 440px;
+  }
+  @include sp {
+    margin-right: 405px;
+  }
+}
+
+.line {
+  &__side {
+    border-top: 4px solid white;
+    width: 80px;
+    margin: 20px;
+    &__under {
+      border-top: 4px solid white;
+      width: 80px;
+      margin: 20px;
+      margin: 0 0 0 70px;
+    }
+  }
+  &__border {
+    border-top: 2px solid white;
+    width: 20px;
+    transform: rotate(90deg);
+  }
+}
