@@ -46,7 +46,7 @@
     margin: 35px 100px 0px 110px;
     > h1 {
       font-size: 12px;
-      margin: 38px 25px 25px 19px;
+      margin: 42px 25px 25px 19px;
       text-align: center;
     }
     > p {
@@ -71,7 +71,7 @@
     }
   }
   &_news {
-    margin: 75px 100px 0px 110px;
+    margin: 70px 100px 0px 100px;
     height: 210px;
 
     &_title {
@@ -79,7 +79,7 @@
       font-size: 12px;
     }
     &_topic {
-      margin: 30px 0 0 0;
+      margin: 35px 0 0 0;
       font-size: 1px;
       &1,
       &2,
@@ -88,14 +88,19 @@
       &5 {
         display: flex;
         font-size: 1px;
+        border-bottom: solid 1px #c8c8c8;
+        border-top: solid 1px #c8c8c8;
         > p {
-          margin-left: 20px;
+          margin-left: 30px;
         }
       }
     }
   }
-}
-
-.line {
-  border-top: 1px solid #ff0000;
+  &_contact {
+    margin: 15px 0 0 0;
+    &_title {
+      text-align: center;
+      font-size: 12px;
+    }
+  }
 }

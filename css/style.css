@@ -63,7 +63,7 @@
 
 .l-contents_main_article > h1 {
   font-size: 12px;
-  margin: 38px 25px 25px 19px;
+  margin: 42px 25px 25px 19px;
   text-align: center;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .l-contents_news {
-  margin: 75px 100px 0px 110px;
+  margin: 70px 100px 0px 100px;
   height: 210px;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .l-contents_news_topic {
-  margin: 30px 0 0 0;
+  margin: 35px 0 0 0;
   font-size: 1px;
 }
 
@@ -110,21 +110,20 @@
   display: -ms-flexbox;
   display: flex;
   font-size: 1px;
+  border-bottom: solid 1px #c8c8c8;
+  border-top: solid 1px #c8c8c8;
 }
 
 .l-contents_news_topic1 > p, .l-contents_news_topic2 > p, .l-contents_news_topic3 > p, .l-contents_news_topic4 > p, .l-contents_news_topic5 > p {
-  margin-left: 20px;
-  position: relative;
+  margin-left: 30px;
 }
 
-.l-contents_news_topic1 > p > ::before, .l-contents_news_topic2 > p > ::before, .l-contents_news_topic3 > p > ::before, .l-contents_news_topic4 > p > ::before, .l-contents_news_topic5 > p > ::before {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background-color: #0097a7;
-  position: absolute;
-  bottom: 0;
-  left: 10px;
+.l-contents_contact {
+  margin: 15px 0 0 0;
+}
+
+.l-contents_contact_title {
+  text-align: center;
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */
