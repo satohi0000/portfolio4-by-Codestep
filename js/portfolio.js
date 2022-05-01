@@ -7,7 +7,8 @@ $(function() {
     console.log(w);
  
     const change_W = w * 2 / 3
-   console.log(change_W);
+   
+    console.log(change_W);
 
   jQuery('.minipicture').css('height', change_W);
 });
