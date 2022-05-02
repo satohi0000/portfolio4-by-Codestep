@@ -27,7 +27,7 @@
     height: 60px;
     background-color: white;
     margin: 0 70px 0 0;
-    padding: 0 4% 0 0;
+
     > ul {
       display: flex;
       color: #2b3137;
@@ -38,6 +38,55 @@
     li {
       text-align: center;
       margin: 0px 24px;
+    }
+  }
+}
+
+.l-header2 {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+  &__left {
+    width: 120px;
+    height: 40px;
+    margin: 15px 60px;
+    @include sp{
+      margin: 15px 11px;
+    }
+    a {
+        background-color: #393E46;
+        color: white;
+        font-family: Yu Gothic;
+        font-weight: bold;
+        height: 20px;
+        width: 80px;
+        padding: 10px 20px 10px 20px;
+        font-size: 21px;
+        margin: 0 0 0 0px;
+      }
+  }
+  &__right {
+    height: 60px;
+    background-color: white;
+    margin: 0 45px 0 0;
+    @include sp{
+      margin: 0;
+    }
+
+    > ul {
+      display: flex;
+      color: #2b3137;
+      text-align: center;
+      line-height: 65px;
+     
+    }
+    li {
+      text-align: center;
+      margin: 0px 15px;
     }
   }
 }

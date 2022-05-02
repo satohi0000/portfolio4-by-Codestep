@@ -212,7 +212,6 @@ select {
   height: 60px;
   background-color: white;
   margin: 0 70px 0 0;
-  padding: 0 4% 0 0;
 }
 
 .l-header__right > ul {
@@ -227,6 +226,70 @@ select {
 .l-header__right li {
   text-align: center;
   margin: 0px 24px;
+}
+
+.l-header2 {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.l-header2__left {
+  width: 120px;
+  height: 40px;
+  margin: 15px 60px;
+}
+
+@media (max-width: 599px) {
+  .l-header2__left {
+    margin: 15px 11px;
+  }
+}
+
+.l-header2__left a {
+  background-color: #393E46;
+  color: white;
+  font-family: Yu Gothic;
+  font-weight: bold;
+  height: 20px;
+  width: 80px;
+  padding: 10px 20px 10px 20px;
+  font-size: 21px;
+  margin: 0 0 0 0px;
+}
+
+.l-header2__right {
+  height: 60px;
+  background-color: white;
+  margin: 0 45px 0 0;
+}
+
+@media (max-width: 599px) {
+  .l-header2__right {
+    margin: 0;
+  }
+}
+
+.l-header2__right > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #2b3137;
+  text-align: center;
+  line-height: 65px;
+}
+
+.l-header2__right li {
+  text-align: center;
+  margin: 0px 15px;
 }
 
 .l-contents {
@@ -390,6 +453,13 @@ select {
   background-color: gray;
 }
 
+@media (max-width: 599px) {
+  .l-contents_page_picture {
+    height: 197px;
+    margin: 0 15px;
+  }
+}
+
 .l-contents_page_article_about_h1 > h1 {
   font-family: Arial;
   font-size: 21.6px;
@@ -397,10 +467,22 @@ select {
   margin: 30px 90px;
 }
 
+@media (max-width: 599px) {
+  .l-contents_page_article_about_h1 > h1 {
+    margin: 30px 15px;
+  }
+}
+
 .l-contents_page_article_about_sentence {
   font-family: Arial;
-  margin: 20px 108px 20px 90px;
+  margin: 20px 102px 20px 90px;
   font-size: 14.4px;
+}
+
+@media (max-width: 599px) {
+  .l-contents_page_article_about_sentence {
+    margin: 0px 15px;
+  }
 }
 
 .l-contents_page_article_about_sentence > p {
@@ -410,7 +492,7 @@ select {
 .l-contents_page_article_about_back {
   font-family: Arial;
   font-size: 14.4px;
-  margin: 57px 0 125px 0;
+  margin: 60px 0 261.5px 0;
   text-align: center;
 }
 
@@ -419,5 +501,11 @@ select {
   text-align: center;
   font-size: 10px;
   font-family: Arial;
+}
+
+@media (max-width: 599px) {
+  .l-footer {
+    margin: 0 0 10px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

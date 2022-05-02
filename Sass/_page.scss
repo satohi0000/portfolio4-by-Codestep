@@ -3,6 +3,11 @@
       &_picture{
         margin: 0 60px;
         height: 480px;
+        @include sp{
+            height: 197px;
+            margin: 0 15px;
+
+        }
         background-color:gray ;
       }
       &_article{
@@ -12,11 +17,18 @@
                   font-size: 21.6px;
                   font-weight: bold;
                   margin: 30px 90px;
+                  @include sp{
+                    margin: 30px 15px;
+                }
                 }
             }
             &_about_sentence{
                 font-family: Arial;
-                margin: 20px 108px 20px 90px;
+                margin: 20px 102px 20px 90px;
+                @include sp{
+                    margin: 0px 15px;
+
+                }
                 font-size: 14.4px;
                 >p{
                     margin-bottom: 10px;
@@ -25,7 +37,7 @@
             &_about_back{
                 font-family: Arial;
                 font-size: 14.4px;
-                margin: 57px 0 125px 0;
+                margin: 60px 0 261.5px 0;
                 text-align: center;
 
             }
